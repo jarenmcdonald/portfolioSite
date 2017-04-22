@@ -67,6 +67,14 @@ body {
       font-weight: bold;
       font-size: 4.688em;
       text-align: center; }
+  body #aboutImg {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    max-width: 200px;
+    margin-left: 30%;
+    margin-right: 30%; }
+    body #aboutImg img {
+      border-radius: 200px; }
   body #workCon {
     margin-top: 40px;
     border-top: 1px solid #3D3C3B;
