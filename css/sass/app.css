@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: #bcbcbc; }
+
+#mainHeader {
+  color: #fff;
+  height: 200px; }
+  #mainHeader #logo {
+    width: 200px;
+    height: 100px;
+    background-color: red; }
+  #mainHeader h2 {
+    color: #333; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+  a:hover {
+    color: black; }
+
+#product {
+  -webkit-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg); }
+
+.button, .button-negative {
+  background-color: green;
+  color: #fff;
+  padding: 10px;
+  display: block; }
+
+.button-negative {
+  background-color: red;
+  border: solid 1px #333; }
+
+/*# sourceMappingURL=app.css.map */

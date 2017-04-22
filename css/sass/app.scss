@@ -1,0 +1,293 @@
+//SASS Document
+
+
+
+//Variables
+$brand-color: #32FFDB;
+$theme-dark: #202124;
+$theme-light: #FAFAFA;
+$line-break: #3D3C3B;
+
+$bodyFont: Helvetica, Arial, sans-serif;
+$headerFont: Helvetica, Arial, sans-serif;
+
+
+//Mixin link
+@import "mixins.scss";
+
+
+//Main Page Elements
+
+
+body {
+    background-color: #FAFAFA;
+    font-family: $bodyFont;
+
+    header {
+        background-color: $theme-dark;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        #logoCon {
+            padding-left: 22px;
+        }
+
+        img {
+            max-width: 100%;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #mainNav {
+            margin-right: 5px;
+
+            ul {
+                text-align: center;
+                margin: 0px;
+
+                li:last-child {
+                    margin-right: 0px;
+                }
+
+                li {
+                    display: inline;
+                    margin-right: 50px;
+
+                    a {
+                        font-size: 1.625em;
+                        color: $theme-light;
+                    }
+
+                    a:hover {
+                        color: $brand-color;
+                        border-bottom: 1px solid $brand-color;
+                        transition: all .8s ease;
+                    }
+                }
+            }
+        }
+    }
+
+    #bannerCon {
+        margin-top: 150px;
+        margin-bottom: 200px;
+    }
+
+        #welcome {
+            padding-left: 20px;
+            padding-right: 20px;
+
+            h3 {
+                font-family: $headerFont;
+                color: $theme-dark;
+                font-weight: bold;
+                font-size: 4.688em;
+                text-align: center;
+            }
+        }
+
+        #scrollArrow {
+            margin-top: 70px;
+            margin-left: 30%;
+            margin-right: 30%;
+            width: 150px;
+            animation-name: pulse;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes pulse {
+            0% {transform: scale(1); }
+            50% {transform: scale(0.85); }
+            100% {transform: scale(1); }
+        }
+
+    #aboutCon {
+        margin-top: 40px;
+        border-top: 1px solid $line-break;
+        padding-top: 40px;
+
+        h2 {
+            font-family: $headerFont;
+            color: $theme-dark;
+            font-weight: bold;
+            font-size: 4.688em;
+            text-align: center;
+        }
+    }
+
+    #workCon {
+        margin-top: 40px;
+        border-top: 1px solid $line-break;
+        padding-top: 40px;
+
+        h2 {
+            font-family: $headerFont;
+            color: $theme-dark;
+            font-weight: bold;
+            font-size: 4.688em;
+            text-align: center;
+        }
+    }
+
+    #contactCon {
+        margin-top: 20px;
+        border-top: 1px solid $line-break;
+        padding-top: 20px;
+
+        h2 {
+            font-family: $headerFont;
+            color: $theme-dark;
+            font-weight: bold;
+            font-size: 4.688em;
+            text-align: center;
+        }
+
+        #emailCon {
+            padding-left: 20px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 20px;
+
+            h3 {
+                font-family: $headerFont;
+                font-size: 2em;
+                margin-bottom: 15px;
+                margin-top: 20px;
+            }
+
+            a {
+                font-family: $bodyFont;
+                color: $theme-dark;
+                font-style: italic;
+                font-size: 1.25em;
+            }
+
+            a:hover {
+                color: $brand-color;
+            }
+        }
+
+        #mapCon {
+                height: 300px;
+                background-color: #979AA1;
+                margin-right: auto;
+                margin-left: auto;
+        }
+    }
+
+    footer {
+        background-color: $theme-dark;
+        margin-top: 20px;
+        color: $theme-light;
+
+        #backTop {
+            height: 50px;
+            font-size: 1.625em;
+            padding-top: 10px;
+
+            a {
+                color: $theme-light;
+            }
+
+            a:hover {
+                color: $brand-color;
+                border-bottom: 2px solid $brand-color;
+            }
+        }
+
+        #footerNav {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 40em) {
+    body {
+        header {
+            #logoCon {
+                img {
+                    max-width: 250px;
+                }
+            }
+
+            #logo {
+                max-width: 174px;
+                padding-top: 10px;
+            }
+
+            #mainNav {
+                padding-top: 10px;
+                margin: 0px;
+                margin-top: 10px;
+
+                ul {
+                    text-align: right;
+                }
+
+                ul li a {
+                    font-size: 1.25em;
+                }
+            }
+        }
+
+        #bannerCon {
+            #welcome h3 {
+                margin-top: 80px;
+                padding-left: 25%;
+                padding-right: 25%;
+            }
+        }
+
+        #scrollArrow {
+            margin-left: 43%;
+            margin-right: 43%;
+        }
+
+        #aboutInfo {
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+
+        #workInfo {
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+
+        footer {
+            color: $theme-light;
+
+            #backTop {
+                display: none;
+            }
+
+            #footerNav {
+                display: inline;
+                text-align: right;
+                //max-height: 40px;
+
+                ul {
+                    padding-top: 8px;
+
+                    li {
+                        display: inline;
+                        margin-left: 40px;
+
+                        a {
+                            color: $theme-light;
+                            font-size: .875em;
+                        }
+
+                        a:hover {
+                            color: $brand-color;
+                            border-bottom: 1px solid $brand-color;
+                            transition: all .8s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
