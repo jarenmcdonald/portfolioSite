@@ -204,7 +204,7 @@ body {
         font-weight: bold;
         font-size: 2.25em;
         opacity: 0;
-        transition: all .5s ease;
+        transition: all .4s ease;
         text-shadow: 3px 3px 8px #1d1d1d;
     }
 
@@ -226,16 +226,32 @@ body {
             background-image: url("../images/western.png");
         }
 
+        #westernBox:hover {
+            background-image: url("../images/westernBlur.png");
+        }
+
         #teamCanadaBox {
             background-image: url("../images/teamCanada.png");
+        }
+
+        #teamCanadaBox:hover {
+            background-image: url("../images/teamCanadaBlur.png");
         }
 
         #fimsCouncilBox {
             background-image: url("../images/fimsCouncil.png");
         }
 
+        #fimsCouncilBox:hover {
+            background-image: url("../images/fimsCouncilBlur.png");
+        }
+
         #jjvideographyBox {
             background-image: url("../images/jjvideography.png");
+        }
+
+        #jjvideographyBox:hover {
+            background-image: url("../images/jjvideographyBlur.png");
         }
 
         #blankBox {

@@ -129,7 +129,7 @@ body {
     font-weight: bold;
     font-size: 2.25em;
     opacity: 0;
-    transition: all .5s ease;
+    transition: all .4s ease;
     text-shadow: 3px 3px 8px #1d1d1d; }
   body .hoverText:hover {
     opacity: 1; }
@@ -143,12 +143,20 @@ body {
     display: block; }
     body #workBoxes #westernBox {
       background-image: url("../images/western.png"); }
+    body #workBoxes #westernBox:hover {
+      background-image: url("../images/westernBlur.png"); }
     body #workBoxes #teamCanadaBox {
       background-image: url("../images/teamCanada.png"); }
+    body #workBoxes #teamCanadaBox:hover {
+      background-image: url("../images/teamCanadaBlur.png"); }
     body #workBoxes #fimsCouncilBox {
       background-image: url("../images/fimsCouncil.png"); }
+    body #workBoxes #fimsCouncilBox:hover {
+      background-image: url("../images/fimsCouncilBlur.png"); }
     body #workBoxes #jjvideographyBox {
       background-image: url("../images/jjvideography.png"); }
+    body #workBoxes #jjvideographyBox:hover {
+      background-image: url("../images/jjvideographyBlur.png"); }
     body #workBoxes #blankBox {
       display: none; }
   body #contactCon {
