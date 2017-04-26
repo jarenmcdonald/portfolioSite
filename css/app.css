@@ -111,9 +111,46 @@ body {
       font-weight: bold;
       font-size: 4.688em;
       text-align: center; }
-    body #workCon #workInfo {
-      padding-left: 10%;
-      padding-right: 10%; }
+  body .workBox {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    height: 350px;
+    width: 100%;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center; }
+  body .hoverText {
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 350px;
+    text-align: center;
+    color: #FAFAFA;
+    font-weight: bold;
+    font-size: 2.25em;
+    opacity: 0;
+    transition: all .5s ease;
+    text-shadow: 3px 3px 8px #1d1d1d; }
+  body .hoverText:hover {
+    opacity: 1; }
+  body .workBox:hover {
+    -webkit-filter: grayscale(80%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(80%); }
+  body #workBoxes {
+    margin-bottom: 30px;
+    width: 100%;
+    display: block; }
+    body #workBoxes #westernBox {
+      background-image: url("../images/western.png"); }
+    body #workBoxes #teamCanadaBox {
+      background-image: url("../images/teamCanada.png"); }
+    body #workBoxes #fimsCouncilBox {
+      background-image: url("../images/fimsCouncil.png"); }
+    body #workBoxes #jjvideographyBox {
+      background-image: url("../images/jjvideography.png"); }
+    body #workBoxes #blankBox {
+      display: none; }
   body #contactCon {
     margin-top: 20px;
     margin-bottom: 50px;
@@ -134,7 +171,8 @@ body {
         font-size: 2em;
         margin-bottom: 30px;
         margin-top: 20px;
-        margin-left: 20px; }
+        margin-left: 20px;
+        text-align: center; }
       body #contactCon #linksCon ul {
         list-style-type: none;
         text-align: center;
@@ -221,17 +259,23 @@ body {
     body .button a {
       font-size: 3em; }
   body #workCon h2 {
-    margin-bottom: 30px; }
-  body #workInfo {
-    padding-left: 20%;
-    padding-right: 20%; }
+    margin-bottom: 10px; }
+  body .workBox {
+    width: 45%;
+    height: 400px;
+    padding: 10px;
+    margin-top: 0px;
+    margin-left: 5%; }
+  body .hoverText {
+    font-size: 2em; }
   body #contactCon h2 {
     margin-bottom: 30px; }
   body #contactCon #linksCon {
     padding-left: 25px; }
     body #contactCon #linksCon h3 {
       margin-left: 0px;
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      text-align: left; }
     body #contactCon #linksCon ul {
       text-align: left; }
     body #contactCon #linksCon li {
@@ -264,6 +308,12 @@ body {
     padding-right: 20px; }
   body .button a {
     font-size: 4em; }
+  body .workBox {
+    margin-top: 40px;
+    height: 400px; }
+  body #workBoxes {
+    padding-left: 60px;
+    padding-right: 60px; }
   body #contactCon #linksCon h3 {
     font-size: 2.5em; }
   body #contactCon #linksCon li {
@@ -283,6 +333,8 @@ body {
     body #aboutCon #aboutInfo p {
       font-size: 1.5em; }
   body .button {
-    margin-top: 40px; } }
+    margin-top: 40px; }
+  body .hoverText {
+    font-size: 2.5em; } }
 
 /*# sourceMappingURL=app.css.map */

@@ -182,10 +182,64 @@ body {
             font-size: 4.688em;
             text-align: center;
         }
+    }
 
-        #workInfo {
-            padding-left: 10%;
-            padding-right: 10%;
+    .workBox {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        height: 350px;
+        width: 100%;
+        display: block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .hoverText {
+        font-family: $bodyFont;
+        line-height: 350px;
+        text-align: center;
+        color: $theme-light;
+        font-weight: bold;
+        font-size: 2.25em;
+        opacity: 0;
+        transition: all .5s ease;
+        text-shadow: 3px 3px 8px #1d1d1d;
+    }
+
+    .hoverText:hover {
+        opacity: 1;
+    }
+
+    .workBox:hover {
+        -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(80%);
+    }
+
+    #workBoxes {
+        margin-bottom: 30px;
+        width: 100%;
+        display: block;
+
+        #westernBox {
+            background-image: url("../images/western.png");
+        }
+
+        #teamCanadaBox {
+            background-image: url("../images/teamCanada.png");
+        }
+
+        #fimsCouncilBox {
+            background-image: url("../images/fimsCouncil.png");
+        }
+
+        #jjvideographyBox {
+            background-image: url("../images/jjvideography.png");
+        }
+
+        #blankBox {
+            display: none;
         }
     }
 
@@ -214,6 +268,7 @@ body {
                 margin-bottom: 30px;
                 margin-top: 20px;
                 margin-left: 20px;
+                text-align: center;
             }
 
             ul {
@@ -368,12 +423,19 @@ body {
         }
 
         #workCon h2 {
-            margin-bottom: 30px;
+            margin-bottom: 10px;
         }
 
-        #workInfo {
-            padding-left: 20%;
-            padding-right: 20%;
+        .workBox {
+            width: 45%;
+            height: 400px;
+            padding: 10px;
+            margin-top: 0px;
+            margin-left: 5%;
+        }
+
+        .hoverText {
+            font-size: 2em;
         }
 
         #contactCon {
@@ -387,6 +449,7 @@ body {
                 h3 {
                     margin-left: 0px;
                     margin-bottom: 40px;
+                    text-align: left;
                 }
 
                 ul {
@@ -453,6 +516,16 @@ body {
             }
         }
 
+        .workBox {
+            margin-top: 40px;
+            height: 400px;
+        }
+
+        #workBoxes {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
         #contactCon {
             #linksCon {
                 h3 {
@@ -496,6 +569,10 @@ body {
 
         .button {
             margin-top: 40px;
+        }
+
+        .hoverText {
+            font-size: 2.5em;
         }
     }
 }
