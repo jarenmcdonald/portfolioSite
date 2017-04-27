@@ -40,7 +40,9 @@ body {
       color: #202124;
       font-weight: bold;
       font-size: 3.5em;
-      text-align: center; }
+      text-align: center;
+      padding-left: 25%;
+      padding-right: 25%; }
   body #scrollArrow {
     margin-top: 20px;
     width: 100%;
@@ -246,14 +248,26 @@ body {
       padding-right: 10px; }
     body header #mainNav ul li a {
       font-size: 1.25em; }
-  body #bannerCon #welcome h3 {
-    margin-top: 100px;
-    padding-left: 25%;
-    padding-right: 25%; }
+  body #bannerCon {
+    margin-top: 100px; }
+    body #bannerCon #welcome h3 {
+      margin-top: 100px;
+      padding-left: 25%;
+      padding-right: 25%;
+      font-size: 4em; }
   body #scrollArrow {
-    margin-top: 70px; }
+    margin-top: 50px;
+    width: 100%;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    display: block;
+    text-align: center; }
     body #scrollArrow img {
-      width: 150px; }
+      width: 100px;
+      margin-left: 0 auto;
+      margin-right: 0 auto; }
   body #aboutCon #aboutImg img {
     max-width: 400px; }
   body #aboutCon #aboutInfo {

@@ -86,6 +86,8 @@ body {
                 font-weight: bold;
                 font-size: 3.5em;
                 text-align: center;
+                padding-left: 25%;
+                padding-right: 25%;
             }
         }
 
@@ -398,18 +400,30 @@ body {
         }
 
         #bannerCon {
+            margin-top: 100px;
+
             #welcome h3 {
                 margin-top: 100px;
                 padding-left: 25%;
                 padding-right: 25%;
+                font-size: 4em;
             }
         }
 
         #scrollArrow {
-            margin-top: 70px;
+            margin-top: 50px;
+            width: 100%;
+            animation-name: pulse;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            display: block;
+            text-align: center;
 
             img {
-                width: 150px;
+                width: 100px;
+                margin-left: 0 auto;
+                margin-right: 0 auto;
             }
         }
 
