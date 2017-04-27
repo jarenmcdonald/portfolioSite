@@ -18,6 +18,12 @@ $headerFont: Helvetica, Arial, sans-serif;
 @import "mixins.scss";
 
 
+//Frameworks
+.row {
+    max-width: 100%;
+}
+
+
 //Main Page Elements
 
 
@@ -603,6 +609,24 @@ body {
 
         .hoverText {
             font-size: 2.5em;
+        }
+    }
+}
+
+
+
+
+//Western Work
+
+
+body {
+
+    #bannerCon {
+        margin-top: 0px;
+        margin-bottom: 30px;
+
+        #welcome{
+            padding: 0;
         }
     }
 }
